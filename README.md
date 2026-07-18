@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="Bot-Poster" width="100%">
+</p>
+
 # 🆔 Easy ID
 
 > A modern, fast and open-source Telegram bot to retrieve Telegram IDs and useful account information.
