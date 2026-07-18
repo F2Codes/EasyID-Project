@@ -1,0 +1,30 @@
+{
+  "name": "easy-id",
+  "version": "1.0.0",
+  "description": "Professional Telegram ID Bot built with grammY",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "telegram",
+    "grammy",
+    "bot",
+    "telegram-bot",
+    "easy-id"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "grammy": "^1.45.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  }
+}
