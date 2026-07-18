@@ -6,44 +6,14 @@ export function registerDeepScan(bot: Bot) {
     bot.command("deepscan", async (ctx) => {
         const target = ctx.msg?.reply_to_message?.from ?? ctx.from;
 
-        // Animation
-        const loading = await ctx.reply(
-`🛰 <b>Deep Scanning...</b>
-
-▰▱▱▱▱ 20%`,
-        {
-            parse_mode: "HTML",
-        });
-
-        await sleep(700);
-
-        await ctx.api.editMessageText(
-            ctx.chat.id,
-            loading.message_id,
-`🛰 <b>Deep Scanning...</b>
-
-▰▰▰▱▱ 60%`,
-            {
-                parse_mode: "HTML",
-            }
-        );
-
-        await sleep(700);
-
-        await ctx.api.editMessageText(
-            ctx.chat.id,
-            loading.message_id,
-`🛰 <b>Deep Scanning...</b>
-
-▰▰▰▰▰ 100%
-
-✅ <b>Scan Completed</b>`,
-            {
-                parse_mode: "HTML",
-            }
-        );
-
-        await sleep(500);
+await ctx.replyWithSticker(
+    "CAACAgIAAxkBAANoalugLxO5gWeBkmGB3gXMX_PEAkQAAq8lAAKbonBLuDnFfbteCGY9BA",
+    {
+        reply_parameters: {
+            message_id: ctx.msg.message_id,
+        },
+    }
+);
 
         const photos = await ctx.api.getUserProfilePhotos(target.id, {
             limit: 1,

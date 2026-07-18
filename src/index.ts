@@ -72,3 +72,7 @@ Example:
         is_personal: true,
     });
 });
+
+bot.on("message:sticker", async (ctx) => {
+    await ctx.reply(ctx.msg.sticker.file_id);
+});

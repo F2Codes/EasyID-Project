@@ -4,6 +4,7 @@ import { registerHelp } from "./help";
 import { registerId } from "./id";
 import { registerWhois } from "./whois";
 import { registerDeepScan } from "./deepscan";
+import { registerAbout } from "./about";
 
 export function registerCommands(bot: Bot) {
   registerStart(bot);
@@ -11,5 +12,7 @@ export function registerCommands(bot: Bot) {
   registerId(bot);
   registerWhois(bot);
   registerDeepScan(bot);
+  registerAbout(bot);
 }
+
 
