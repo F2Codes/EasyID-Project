@@ -119,6 +119,7 @@ npm run dev
 - [x] Deep Scan
 - [x] Whois
 - [x] About Command
+- [ ] Twitter Screenshot
 - [ ] File Inspector
 - [ ] JSON Export
 - [ ] Chat Information
